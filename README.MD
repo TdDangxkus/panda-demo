@@ -17,6 +17,7 @@ This website showcases my projects, skills, and interests. It is built using bas
 1. Clone this repository:
    ```bash
    git clone https://github.com/TdDangxkus/TdDangxkus.github.io.git
+<<<<<<< HEAD
 
 
 2. TÌM HIỂU VỀ THƯ VIỆN PACKET TRONG JS VỀ DATE_TIME
@@ -36,3 +37,5 @@ Thư viện Flatpickr:
 
 
 Flatpickr là một thư viện JS giúp quản lý lịch chọn ngày đơn giản, gọn nhẹ và hỗ trợ nhiều tùy chỉnh. Bạn chỉ cần thêm thư viện này vào trang web và khởi tạo nó bằng cách sử dụng flatpickr() với tùy chọn mode: "range".
+=======
+>>>>>>> bfa437a31ddc96cd654aa1f90c08bff032a73e3c
