@@ -17,7 +17,6 @@ This website showcases my projects, skills, and interests. It is built using bas
 1. Clone this repository:
    ```bash
    git clone https://github.com/TdDangxkus/TdDangxkus.github.io.git
-<<<<<<< HEAD
 
 
 2. TÌM HIỂU VỀ THƯ VIỆN PACKET TRONG JS VỀ DATE_TIME
