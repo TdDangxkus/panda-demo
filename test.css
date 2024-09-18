@@ -1,0 +1,114 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Header Styles */
+header {
+	width: 100%;
+	height: 700px;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), 
+	            url("https://via.placeholder.com/1500") center / cover no-repeat;
+	position: relative;
+}
+
+.nav__menu_first {
+	font-size: 1.25rem;
+	width: 80%;
+	height: 36px;
+	position: relative;
+	justify-content: space-between;
+	display: flex;
+	left: 10%;
+	top: 10px;
+}
+
+.nav__menu_first .nav__list_menu {
+	gap: 20px;
+	display: flex;
+	position: relative;
+}
+
+.nav__menu_first .nav__list_menu a {
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	list-style: none;
+}
+
+.nav__logo {
+	font-size: 1.563rem; /* 25px */
+	color: aliceblue;
+}
+
+.nav__logo .nav__btn {
+	display: inline-block;
+	width: 88px;
+	height: 37px;	
+	background-color: white;
+	border-radius: 5px;
+}
+
+.nav__btn a {
+	text-decoration: none;
+	color: var(--Blue-primary, #3E86F5);
+	font-size: 1.063rem; /* 17px */
+	font-weight: 500;
+}
+
+#nav__text_h1 {
+	font-size: 2.125rem; /* 34px */
+	color: white;
+}
+
+.nav__menu_content {
+	width: 60%;
+	height: 300px;
+	position: relative;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.content__first {
+	color: #FFF;
+	font-size: 4rem; /* 64px */
+	font-weight: 600;
+}
+
+.content__second {
+	color: var(--White-primary, #FFF);
+	font-size: 1.5rem; /* 24px */
+	font-weight: 500;
+	line-height: 2rem; /* 32px */
+}

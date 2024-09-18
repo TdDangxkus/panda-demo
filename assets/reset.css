@@ -1,0 +1,442 @@
+	/* Điện thoại nhỏ */
+	@media (max-width: 320px) {
+					/* Styles for mobile screens */
+
+				body header {
+					max-width: 100%;
+					width: 100%;
+					height: 400px;
+					background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%),
+								url("./img/img__travel/travel__nav.jfif") center center / cover no-repeat;
+					position: relative;
+				}
+
+
+				.nav__menu_first .nav__list_menu{
+					display: none !important;
+				}
+				.nav__logo .nav__btn {
+					display: none !important;
+				}
+				.overlay-out{
+					display: inline-block;
+				}
+				.overlay-out {
+					color: white !important;
+					display: block !important;
+					position: absolute;
+					top: -1px !important;
+					z-index: 1; 
+				}
+				#nav__text_h1{
+					font-size: 1rem;
+					
+				}
+				.content__first {
+					color: #FFF;
+					text-align: center;
+					font-family: Poppins;
+					font-size: 1rem !important;
+					font-style: normal;
+					font-weight: 400;
+					line-height: normal;
+				}
+				.content__second {
+					font-size: 1rem !important;
+					font-weight: 600 !important;
+				}
+				
+
+				.option__living_date {
+					width: 40%;
+					height: 6rem;
+					border: 1px solid rgba(0, 0, 0, 0.2);
+					border-radius: 1.5rem;
+					position: relative;
+					display: none !important;
+					text-align: center;
+					gap: 10px;
+				}
+				}
+
+	/* Điện thoại lớn và tablet nhỏ */
+	@media (max-width: 425px) {
+				/* Styles for mobile screens */
+
+				body header {
+					max-width: 100%;
+					width: 100%;
+					height: 400px;
+					background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%),
+								url("./img/img__travel/travel__nav.jfif") center center / cover no-repeat;
+					position: relative;
+				}
+
+
+				.nav__menu_first .nav__list_menu{
+					display: none !important;
+				}
+				.nav__logo .nav__btn {
+					display: none !important;
+				}
+				.overlay-out{
+					display: inline-block;
+				}
+				.overlay-out {
+					color: white !important;
+					display: block !important;
+					position: absolute;
+					top: -1px !important;
+					z-index: 1; 
+				}
+				#nav__text_h1{
+					font-size: 1rem;
+					
+				}
+				.content__first {
+					color: #FFF;
+					text-align: center;
+					font-family: Poppins;
+					font-size: 1rem !important;
+					font-style: normal;
+					font-weight: 400;
+					line-height: normal;
+				}
+				.content__second {
+					font-size: 1rem !important;
+					font-weight: 600 !important;
+				}
+				
+
+				.option__living_date {
+					width: 40%;
+					height: 6rem;
+					border: 1px solid rgba(0, 0, 0, 0.2);
+					border-radius: 1.5rem;
+					position: relative;
+					display: none !important;
+					text-align: center;
+					gap: 10px;
+				}
+	}
+
+	/* Tablet */
+	@media (max-width: 768px) {
+				.nav__menu_first .nav__list_menu{
+						display: none !important;
+				}
+				.nav__logo .nav__btn {
+					display: none !important;
+				}
+				.overlay-out {
+					color: white !important;
+					display: block !important;
+					position: absolute;
+					top: -1px !important;
+					z-index: 1; 
+				}
+				#nav__text_h1{
+					padding: 0 0px;
+				}
+				.content__first {
+					color: #FFF;
+					text-align: center;
+					font-family: Poppins;
+					font-size: 1.5rem !important;
+					font-style: normal;
+					font-weight: 400;
+					line-height: normal;
+				}
+
+				.content__second {
+					font-size: 1rem !important;
+					font-weight: 600 !important;
+				}
+
+
+				.main__booking__bar {
+					width: 90% !important;
+					height: 10rem !important;
+					display: flex;
+
+				}
+
+
+				.main__booking__bar .bar_search_book{
+					width: 40% !important;
+					height: 4rem !important; 
+					background-color: white;
+					border-radius: 25px 25px 0px 0px;
+				
+					display: flex;
+					gap: 10px;
+					position: relative;
+					top: 0;
+					transform: translateY(-80%);
+				}
+				.bar_search_book .option {
+					width: 120px !important;
+					height: 40px !important;
+					border-radius: 10px;
+					text-align: center;
+					line-height: 40px;
+					cursor: pointer;
+					font-weight: 500;
+					top: 10px;
+					text-align: center;
+					position: relative;
+					transition: background-color 0.3s, color 0.3s;
+					top: 50%;
+					left: 50%;
+					transform: translate(-106%, -50%);
+				}
+
+				.main__nav_fight {
+					background-color: #00000014 !important;
+					width: 80% !important;
+					height: 5rem;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					display: flex;
+					border-radius: 1rem;
+					gap: 20px;
+					overflow: hidden;
+					
+				}
+				.opiton__living {
+					display: flex;
+					width: 40% !important;
+					height: 6rem;
+					border: 1px solid rgba(0, 0, 0, 0.945) !important;
+					border-radius: 1.5rem;
+					padding: 0 10px !important;
+				}
+
+
+				.option__from p, 
+				.option__go p{
+					font-size: 10px !important;
+					color: var(--Black-75, rgba(0, 0, 0, 0.742)) !important;
+				}
+				.option__from h4,
+				.option__go h4{
+					font-size: 13px !important;
+					overflow: hidden;
+					display: flex;
+				}
+				.option__go {
+					margin-left: 80px !important;  
+					text-align: center;
+					position: relative;
+				}
+				.option__living_date{
+					display: flex;
+					width: 40% !important;
+					height: 6rem;
+					border: 1px solid rgba(0, 0, 0, 0.945) !important;
+					border-radius: 1.5rem;
+					position: relative;
+				}
+				.btn_group_14{
+					width: 75px !important;
+					position: relative;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					display: block !important;
+				}
+
+				/* hotel */
+				.container_bilde {
+					/* background-color: #3E86F5 !important; */
+					position: relative;
+					width: 100%;
+					/* height: 200px; */
+					max-width: 700px;
+					z-index: 2;	
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					border-radius: 0.1rem !important;
+				}
+				.container__box-item{
+					position: relative;
+					width: 100%;
+					height: 50px;
+					display: flex;
+					justify-content: space-between;
+					z-index: 1;
+					gap: 10px;
+					top: 30%;
+					left: 0%;
+					transform: translate(-0%, -50%);
+					display: flex;
+        			flex-direction: column;
+				}
+				.container_bilde h2 {
+					display: none !important;
+				}
+	}
+
+
+	/* Laptop/desktop */
+	@media (max-width: 1200px) {
+				#nav__text_h1{
+					padding: 0 0px;
+				}
+				.content__first {
+					color: #FFF;
+					text-align: center;
+					font-family: Poppins;
+					font-size: 1.5rem !important;
+					font-style: normal;
+					font-weight: 400;
+					line-height: normal;
+				}
+
+				.content__second {
+					font-size: 1rem !important;
+					font-weight: 600 !important;
+				}
+
+
+				.main__booking__bar {
+					width: 90% !important;
+					height: 10rem !important;
+				}
+				.main__booking__bar .bar_search_book{
+					width: 40% !important;
+					height: 4rem !important; 
+					background-color: white;
+					border-radius: 25px 25px 0px 0px;
+
+					display: flex;
+					gap: 10px;
+					position: relative;
+					top: 0;
+					transform: translateY(-80%);
+				}
+				.bar_search_book .option {
+					width: 120px !important;
+					height: 40px !important;
+					border-radius: 10px;
+					text-align: center;
+					line-height: 40px;
+					cursor: pointer;
+					font-weight: 500;
+					top: 10px;
+					text-align: center;
+					position: relative;
+					transition: background-color 0.3s, color 0.3s;
+					top: 50%;
+					left: 50%;
+					transform: translate(-106%, -50%);
+				}
+
+				.main__nav_fight {
+					/* background-color: #000000; */
+					width: 80% !important;
+					height: 5rem;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					display: flex;
+					border-radius: 1rem;
+					gap: 20px;
+					overflow: hidden;
+					
+				}
+				.opiton__living {
+					display: flex;
+					width: 40% !important;
+					height: 6rem;
+					border: 1px solid rgba(0, 0, 0, 0.945) !important;
+					border-radius: 1.5rem;
+					padding: 0 10px !important;
+				}
+
+
+				.option__from p, 
+				.option__go p{
+					font-size: 10px !important;
+					color: var(--Black-75, rgba(0, 0, 0, 0.742)) !important;
+				}
+				.option__from h4,
+				.option__go h4{
+					font-size: 13px !important;
+					overflow: hidden;
+					display: flex;
+				}
+				.option__go {
+					margin-left: 80px !important;  
+					text-align: center;
+					position: relative;
+				}
+				.option__living_date{
+					display: flex;
+					width: 40% !important;
+					height: 6rem;
+					border: 1px solid rgba(0, 0, 0, 0.945) !important;
+					border-radius: 1.5rem;
+					position: relative;
+				}
+				.btn_group_14{
+					width: 75px !important;
+					position: relative;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+
+				/* hotel */
+				.container_bilde {
+					/* background-color: #3E86F5 !important; */
+					position: relative;
+					width: 100%;
+					/* height: 200px; */
+					max-width: 700px;
+					z-index: 2;	
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					border-radius: 0.1rem !important;
+				}
+				.container__box-item{
+					position: relative;
+					width: 100%;
+					height: 50px;
+					z-index: 1;
+					top: 30%;
+					left: 0%;
+					transform: translate(-0%, -50%);
+					display: flex;
+        			flex-direction: column;
+				}
+				.container_bilde h2 {
+					display: none !important;
+				}
+				.booking-field input,
+				.booking-field select {
+					width: 150px !important;
+					height: 60px;
+					border: 1px solid;
+					font-size: 12px;
+					font-weight: 600;
+					color: #333;
+					margin-bottom: 5px;
+					border-radius: 6px;
+					box-shadow: 2px 2px 2px 2px rgb(1, 143, 191);
+			}
+
+
+
+	}
+
+
+	/* Màn hình lớn */
+	@media (min-width: 1920px) {
+	
+	}

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!--Add icon -->
+    <link rel="shortcut icon" href="./assets/img/panda-icon-nav.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <!--Add style -->
+    <link rel="stylesheet" href="./assets/reset.css">
+    <link rel="stylesheet" href="./assets/style.css">
+
+    <title>Panda-House</title>
+
+</head>
+<body>
+  <header>
+        <section class="nav__menu_first">
+
+        <div class="nav__logo">
+              <h1 id="nav__text_h1" style="font-weight: 900;">Panda</h1>
+        </div>
+        <nav>
+          <uL class="nav__list_menu">
+            <li id="nav__item_child"><a href="#"><i class=" "></i> Review</a></li>
+            <li id="nav__item_child"><a href="#"><i class=" "></i> Tips</a></li>
+            <li id="nav__item_child"><a href="#"><i class=" "></i> Alerts</a></li>
+            <li id="nav__item_child"><a href="#"><i class=" "></i> Blog</a></li>
+          </uL>
+          
+        </nav>
+
+       
+
+        <div class="nav__logo">
+          <button class="nav__btn"><a href="">Blog</a></button>
+        </div>
+
+
+
+        <div class="overlay-out">
+          <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+             <ul><span>Account</span>
+                <li id="overlay__content-item"><a href="">Quản lí tài khoản</a></li>
+                <li id="overlay__content-item"><a href="">Đặt Chỗ & Chuyến Đi</a></li>
+                <li id="overlay__content-item"><a href="">Other</a></li>
+             </ul>
+
+             <ul><span>Other</span>
+              <li id="overlay__content-item"><a href="">VND Đồng Việt Nam</a></li>
+              <li id="overlay__content-item"><a href="">Tiếng Việt</a></li>
+              <li id="overlay__content-item"><a href="">Chương trình khách hàng thân thiết</a></li>
+              <li id="overlay__content-item"><a href="">Đăng chỗ nghỉ của Quí vị</a></li>
+
+            </ul><ul><span>Trợ giúp</span>
+              <li id="overlay__content-item"><a href="">Liên hệ Dịch vụ và Khách hàng</a></li>
+              <li id="overlay__content-item"><a href="">Tranh Chấp Đối Tác</a></li>
+            </ul>
+
+            </ul><ul><span>Cảm Hứng</span>
+              <li id="overlay__content-item"><a href="">Uư đãi theo mùa và dịp lễ</a></li>
+              <li id="overlay__content-item"><a href="">Bài viết về du lịch</a></li>
+            </ul>
+
+          </ul><ul><span>Cài đặt và pháp lí</span>
+            <li id="overlay__content-item"><a href="">Về Pandabooking.com </a></li>
+            <li id="overlay__content-item"><a href="">Cơ hội làm việc</a></li>
+            <li id="overlay__content-item"><a href="">Trở thành đối tác phân phối</a></li>
+            <li id="overlay__content-item"><a href="">Truyền Thông</a></li>
+
+        </ul>
+            </div>
+          </div>
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+      </section>
+
+
+
+    <section class="nav__menu_content">
+      <div class="content__first">
+        <h1>Discover Your Life, Travel Where You Want</h1>
+      </div>
+      <div class="content__second">
+        <p>Would you explore natur paradise in the world, let’s find the best destination in world with us.</p>
+      </div>
+      
+
+    </section>
+  
+ </header>
+
+<!-- Main-order-boking -->
+  <main class="main__booking__bar">
+    <div class="bar_search_book">
+      <div id="fight" class="option selected" onclick="selectFight(this)">
+        <img id="img_fight" src="./assets/img/fight__nav.png" alt="">Fight</div>
+      <div id="hotel" class="option" onclick="selectHotel(this)">
+        <img id="img_hotel" src="./assets/img/hotel__nav.png" alt="">Hotel</div>
+    </div>
+<!--  thẻ dành cho khách hàng đạt chuyến bay and hotel -->
+<div div class="packet_main_item" id="packet__main-item">
+          <div class="main__nav_fight">
+            <div class="opiton__living">
+              <div class="option__from">
+                <p>Living From</p>
+                <h4>Cần Thơ</h4>  
+              </div>       
+              <img id="img__airlane" src="./assets/img/img__travel/Airplane Mode On.png" alt="">
+              <div class="option__go">
+                <p>Going To</p>
+                <h4>Tp.Hồ Chí Minh</h4> 
+              </div>
+            </div>
+            
+        <!--  thẻ dành cho khách hàng booking hotel -->
+            <div class="option__living_date">
+              <div class="option__date__first">
+                  <p id="date__text">Leave 
+                    <img id="img__fight_first" src="./assets/img/img__travel/fight__leave.png" alt="">
+                  </p>
+                  <h4> 31/12/24</h4>
+              </div>
+
+
+              <!-- <img id="img__fight_date" src="./assets/img/img__travel/option_date.png" alt=""> -->
+                  <button class="date__btn">
+                    <img id="img__fight_date" src="./assets/img/img__travel/option_date.png" alt="">
+                  </button>
+
+              <div class="option__date__last">
+                <p id="date__text">Return
+                  <img id="img__fight_last" src="./assets/img/img__travel/fight__return.png" alt="">
+                </p>
+                <h4>31/12/24</h4>
+              </div>
+            </div>
+
+          <div class="option__btn_search">
+            <img class="btn_group_14" src="./assets/img/img__travel/Group 14.svg" alt="">
+          </div>
+
+    </div>
+    </div>
+</main>
+
+
+
+
+  <!-- Main--page -->
+  <section class="main_nav_content_page">
+      <div class="content__page">
+        <h1 id="content__text__title">Special Upcoming Offers</h1>
+       
+        <div class="main__btn_selection">
+            <div class="btn_select">
+              <button class="btn__select_item active_select" onclick="selectTeam(this)"><span>Team</span></button>
+              <button class="btn__select_item" onclick="selectCouple(this)"><span>Couple</span></button>
+              <button class="btn__select_item" onclick="selectFamily(this)"><span>Couple</span></button>
+            </div>
+        </div>
+  
+      </div>
+
+
+      <div class="row__colunm__list" id="row__colunm__list"> 
+        <!-- package__1 -->
+        <div class="colunm_item">
+          <div class=" package__item--first">
+            <img class="package__image" src="./assets/img/img__travel/hoteL__team.jfif" alt="">
+           <span class="package__date">14 FEB 2022</span>
+            <div class="package__description">
+                <span class="package__title">Relax  </span>
+                <span class="package__duration">3 Days, 3 Nights</span>
+            </div>
+            <div class="package__name">Loga Sea</div>
+            <div class="package__price">400$</div>
+            <div class="package__cta">Book Now</div>
+        </div>
+        
+        <div class=" package__item--second">
+            <img class="package__image" src="./assets/img/img__travel/hoteL__team01.jfif" alt="">
+          <span class="package__date">18 JUN 2022</span>
+            <div class="package__description">
+              <span class="package__title">Relax</span>
+              <span class="package__duration">3 Days, 3 Nights</span>
+            </div>
+            <div class="package__name">Ansgar Scheffold</div>
+            <div class="package__price">340$</div>
+            <div class="package__cta">Book Now</div>
+        </div>
+        
+        <div class=" package__item--third">
+            <img class="package__image" src="./assets/img/img__travel/hoteL__team02.jfif" alt="">
+          <span class="package__date">22 DEC 2022</span>
+            <div class="package__description">
+              <span class="package__title">Relax</span>
+              <span class="package__duration">3 Days, 3 Nights</span>
+            </div>
+            <div class="package__name">Lona X</div>
+            <div class="package__price">350$</div>
+            <div class="package__cta">Book Now</div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+<!-- Page--content -->
+    <article class="container__content-page">
+      <div class="item__page-list">
+          <div class="item__page--img">
+            <img id="item__page--img" src="./assets/img/img__travel/img__page.jfif" alt="">
+            
+            <div id="item__page--box-1">
+              <h3>300+</h3>
+              <p>DESTINATIONS</p>
+            </div>
+            
+            <div id="item__page--box-2">
+              <h3>5000+</h3>
+              <p>TOURISTS</p>
+            </div>
+            
+            <div id="item__page--box-3">
+              <h3>500+</h3>
+              <p>HOTELS</p>
+            </div>
+          </div>
+
+          <div class="item__page-content">
+            <h2>Travel Any Corner of The World With Us</h2>
+          
+            <span>Would you explore nature paradise in the world, let’s find the best destination in world with us, 
+              Would you explore nature paradise in the world, let’s find the best destination in world with us. 
+              Would you explore nature paradise in the world, let’s find the best destination in world with us. 
+            </span>
+
+            <div id="item__page-content-element">
+            <span>Would you explore nature paradise in the world, 
+              let’s find the best destination in world with us.</span>
+            </div>
+
+              <button class="item__page-btn"><a href="#">Contact Us</a></button>
+          </div>
+        </div>
+    </article>
+
+
+<!-- Recommended Destination -->
+<aside class="aside__content">
+
+    <div class="aside__content-title">
+      <h2 id="aside__content-tille-page">Recommended Destination</h2>
+    
+      <div class="aside__content_btn">
+        <div class="btn_select" id="aside__btn__select">
+          <button id="item-populor" class="btn__select_item-mountain active_select" onclick="clickTargetFirst(this)" ><span>Populor</span></button>
+          <button id="item-adventure" class="btn__select_item-mountain" onclick="clickTargetSecond(this)"><span>Adventure</span></button>
+          <button id="item-beath" class="btn__select_item-mountain" onclick="clickTargetSecond(this)"><span>Beath</span></button>
+        </div>
+      </div>
+    </div>
+
+  <div class="aside__content_box-element"d id="aside__content_box">
+        <!-- box-1 -->
+        <div class="packet__destination-box-1">
+          <div class="packet__destination-img">
+            <img id="packet__destination-img" src="./assets/img/img__travel/descript_hotel00.jfif" alt="">
+          </div>
+          <div class="rating"><span><img src="./assets/img/img__travel/star_nav.png" alt=""></span> 4.5</div> 
+          <h2>Kina Mountain</h2>
+          <p><i class="fa-solid fa-location-dot"></i> Cambodia</p>
+        </div>
+        <!--box-2  -->
+        <div class="packet__destination-box-2">
+          <div class="packet__destination-img">
+            <img id="packet__destination-img" src="./assets/img/img__travel/descript_hotel01.jfif" alt="">
+          </div>
+          <div class="rating"><span><img src="./assets/img/img__travel/star_nav.png" alt=""></span> 4.5</div> 
+          <h2>Kina Mountain</h2>
+          <p><i class="fa-solid fa-location-dot"></i> Cambodia</p>
+        </div>
+        <!-- box-3 -->
+        <div class="packet__destination-box-3">
+          <div class="packet__destination-img">
+            <img id="packet__destination-img" src="./assets/img/img__travel/descript_hotel03.jfif" alt="">
+          </div>
+          <div class="rating"><span><img src="./assets/img/img__travel/star_nav.png" alt=""></span> 4.5</div> 
+          <h2>Kina Mountain</h2>
+          <p><i class="fa-solid fa-location-dot"></i> Cambodia</p>
+        </div>
+        <!-- box-4 -->
+        <div class="packet__destination-box-4">
+          <div class="packet__destination-img">
+            <img id="packet__destination-img" src="./assets/img/img__travel/descript_hotel04.jfif" alt="">
+          </div>
+          <div class="rating"><span><img src="./assets/img/img__travel/star_nav.png" alt=""></span> 4.5</div>  
+          <h2>Kina Mountain</h2>
+          <p><i class="fa-solid fa-location-dot"></i> Cambodia</p>
+        </div>
+  </div>
+
+</aside>
+
+
+
+
+<aside class="last__aside-end">
+  <div class="last__aside-box-content">
+      <!-- box-feedback-1 -->
+      <div class="last__box_item-first last__box_item active">
+                <img id="last__box_item-first-img" src="./assets/img/img__travel/moccau_nav_footer.png" alt="">
+              <h3>
+                Our trip to Morocco was truly a onece in a lifetime experience 
+                and we are so grateful to everyone that made it happen seamlessly. 
+                Our travel planner, Jaouad, was increadible.
+              </h3>
+              <p id="last__box_item-first-name">-Vand D</p>
+              <p>Happy Treloo</p>
+              <p><img id="last__box_item-first-avatar" src="./assets/img/img__travel/girl__footer.png" alt=""></p>
+              <div id="last__box_item-first-rating"><span><img src="./assets/img/img__travel/star_nav.png" alt=""></span> 4.5</div> 
+         
+        </div>
+      <!-- box-feedback-2 -->
+        <div class="last__box_item-second last__box_item active">
+            <img id="last__box_item-second-img" src="./assets/img/img__travel/moccau_nav_footer.png" alt="">
+            <h3>
+              Our trip to Morocco was truly a onece in a lifetime experience 
+              and we are so grateful to everyone that made it happen seamlessly. 
+              Our travel planner, Jaouad, was increadible.
+            </h3>
+            <p id="last__box_item-first-name">-Vand D</p>
+            <p>Happy Treloo</p>
+            <p><img id="last__box_item-second-avatar" src="./assets/img/img__travel/girl__footer.png" alt=""></p>
+            <div id="last__box_item-second-rating"><span><img src="./assets/img/img__travel/star_nav.png" alt=""></span> 4.5</div> 
+        </div>
+         
+      <!-- box-feedback-3 -->
+            <div class="last__box_item-first last__box_item active">
+              <img id="last__box_item-first-img" src="./assets/img/img__travel/moccau_nav_footer.png" alt="">
+            <h3>
+               trip to Morocco was truly a onece in a lifetime experience 
+              and we are so grateful to everyone that made it happen seamlessly. 
+              Our travel planner, Jaouad, was increadible.
+            </h3>
+            <p id="last__box_item-first-name">-Vand D</p>
+            <p>Happy Treloo</p>
+            <p><img id="last__box_item-first-avatar" src="./assets/img/img__travel/girl__footer.png" alt=""></p>
+            <div id="last__box_item-first-rating"><span><img src="./assets/img/img__travel/star_nav.png" alt=""></span> 4.5</div> 
+        </div>
+      <!-- box-feedback-4 -->
+          <div class="last__box_item-second last__box_item active">
+              <img id="last__box_item-second-img" src="./assets/img/img__travel/moccau_nav_footer.png" alt="">
+              <h3>
+                trip trip to Morocco was truly a onece in a lifetime experience 
+                and we are so grateful to everyone that made it happen seamlessly. 
+                Our travel planner, Jaouad, was increadible.
+              </h3>
+              <p id="last__box_item-first-name">-Vand D</p>
+              <p>Happy Treloo</p>
+              <p><img id="last__box_item-second-avatar" src="./assets/img/img__travel/girl__footer.png" alt=""></p>
+              <div id="last__box_item-second-rating"><span><img src="./assets/img/img__travel/star_nav.png" alt=""></span> 4.5</div> 
+          </div>
+
+        
+
+  </div>
+<div class="footer__nav--btn">
+  <button id="prevBtn"> <i class="fa-solid fa-angles-right"></i></button>
+  <button id="nextBtn"><i class="fa-solid fa-angles-left"></i></button>
+</div>
+
+</aside>
+
+  <footer class="footer__end-blog">
+      <div class="footer__end-img-footer">
+        <img src="./assets/img/img__travel/footer.jfif" alt="">
+        <h3>Don’t Miss The 50% Discount if You register Today</h3>
+        <button id="footer__end-btn"><span>Register Today</span></button>
+      </div>
+      <div class="footer__end-img-footer-blog">
+        <h3>© 2024 Dalziel - All right reserved.</h3>
+      </div>
+  </footer>
+
+
+
+<script src="./assets/javascript.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script>
+  
+  flatpickr("#daterange", {
+    mode: "range",
+    minDate: "today",
+    dateFormat: "Y-m-d",
+    onClose: function(selectedDates, dateStr, instance) {
+        console.log("Selected dates:", dateStr); // Check selected dates
+    }
+});
+</script>
+</body>
+</html>
